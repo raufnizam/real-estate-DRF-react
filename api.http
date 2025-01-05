@@ -1,0 +1,43 @@
+POST http://localhost:8002/auth/register/
+Content-Type: application/json
+
+{
+    "username": "test",
+    "email": "test@example.com",
+    "password": "admin@123"
+}
+
+###
+POST http://localhost:8002/api/properties/
+Content-Type: application/json
+
+{
+    "title": "title ok",
+    "snippet": "ok this is snippet",
+    "availability": "yes",
+    "address": "Hariyana",
+    "country": "PK",
+    "price": "9090",
+    "description": "tdesc",
+}
+
+
+
+###
+POST http://localhost:8002/auth/token/
+Content-Type: application/json
+
+{
+    "username": "test",
+    "password": "admin@123"
+}
+
+
+###
+GET http://localhost:8002/api/properties/
+
+
+###
+GET http://localhost:8002/dashboard
+Authorization: Bearer 
+
