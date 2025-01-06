@@ -13,6 +13,12 @@ const Navbar = () => {
           <Link to="/" className="hover:text-gray-300 transition-colors duration-200">
             Home
           </Link>
+          <Link
+            to="/properties"
+            className="hover:text-gray-300 transition-colors duration-200"
+          >
+            Properties
+          </Link>
           {isAuthenticated ? (
             <>
               <Link
