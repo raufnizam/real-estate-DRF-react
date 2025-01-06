@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-lzp36jb3mwh&m@5&qo11ltf!#%y=!e319p$#-cmx_k$2z_0&mn
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "api",
-    "members",
+    "auth_app",
     "rest_framework",
     'rest_framework_simplejwt',
     'corsheaders',
@@ -141,4 +141,6 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  # React app URL
     "http://127.0.0.1:5173",  # Alternate local URL
 ]
+
+CORS_ALLOW_ALL_ORIGINS = True 
 
