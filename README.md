@@ -63,8 +63,8 @@ Welcome to the **Real Estate Application**, built with **Django REST Framework**
 ## 🛠️ API Endpoints
 
 ### Authentication
-- **POST** `/api/register/` - Register a new user
-- **POST** `/api/login/` - Login to get a token
+- **POST** `/auth/register/` - Register a new user
+- **POST** `/auth/login/` - Login to get a token
 
 ### Properties
 - **GET** `/api/properties/` - List all properties
